@@ -1,6 +1,7 @@
 @import 'includes/mixins';
 
 $grid-row-gap = 15px;
+$chart-grid-width = 500px;
 
 .metric {
     display: grid;
@@ -59,8 +60,12 @@ canvas {
 #metric-details {
     dl {
         display: flex;
+        flex-wrap: wrap;
         font-size: .8em;
+        justify-content: center;
+        line-height: 1.5;
         margin: 0;
+        max-width: $chart-grid-width;
 
         div {
             display: flex;
